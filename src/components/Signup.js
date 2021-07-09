@@ -20,16 +20,10 @@ const Signup = () => {
     <div>
       <form onSubmit={onSubmit}>
         <label htmlFor="email">Email</label>
-        <input
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-        ></input>
+        <input value={email} onChange={(event) => setEmail(event.target.value)}></input>
         <label htmlFor="password">Password</label>
-        <input
-          value={password}
-          onChange={(event) => setPassword(event.target.value)}
-        ></input>
-
+        <input value={password} onChange={(event) => setPassword(event.target.value)}></input>
+		<br/>
         <button type="submit">Signup</button>
       </form>
     </div>
