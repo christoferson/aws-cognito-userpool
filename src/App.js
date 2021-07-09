@@ -1,14 +1,18 @@
-import './App.css';
+import React from "react";
+import "./App.css";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import { Account } from "./components/Account";
+import Status from "./components/Status";
 
-function App() {
+const App = () => {
   return (
-    <div className="App" style={{textAlign:'center'}}>
+    <Account>
+      <Status />
       <Signup />
       <Login />
-    </div>
+    </Account>
   );
-}
+};
 
 export default App;
