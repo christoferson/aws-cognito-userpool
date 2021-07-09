@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+label {
+  display: block;
+  margin-top: 8px;
+  font-size: 32px;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+  height: 48px;
+  width: 440px;
+  font-size: 32px;
+}
+
+button {
+  margin: 24px;
+  height: 48px;
+  font-size: 24px;
+  text-align: center;
+}
+
+form {
+  margin-top: 24px;
+  border-top: 4px solid black;
+}
+
