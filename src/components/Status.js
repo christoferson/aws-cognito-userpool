@@ -11,10 +11,10 @@ const Status = () => {
       console.log("Session: ", session);
       setStatus(true);
     });
-  }, []);
+  }, [getSession]);
 
   return (
-    <div style={{ fontSize: "24px" }}>
+    <div style={{ fontSize: "24px", backgroundColor: "gray" }}>
       {status ? <button onClick={logout}>Logout</button> : "Please login"}
     </div>
   );

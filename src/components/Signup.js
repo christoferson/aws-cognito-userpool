@@ -18,6 +18,7 @@ const Signup = () => {
 
   return (
     <div>
+      <h1>Sign Up</h1>
       <form onSubmit={onSubmit}>
         <label htmlFor="email">Email</label>
         <input value={email} onChange={(event) => setEmail(event.target.value)}></input>
