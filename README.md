@@ -71,3 +71,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Configuration - UserPool.js
+The Amazon Cognito Identity SDK for JavaScript requires two configuration values from your AWS Account in order to access your Cognito User Pool:
+
+The User Pool Id, e.g. us-east-1_aB12cDe34
+A User Pool App Client Id, e.g. 7ghr5379orhbo88d52vphda6s9
+* When creating the App, the generate client secret box must be unchecked because the JavaScript SDK doesn't support apps that have a client secret.
+* If you will be using Cognito Federated Identity to provide access to your AWS resources or Cognito Sync you will also need the Id of a Cognito Identity Pool that will accept logins from the above Cognito User Pool and App, i.e. us-east-1:85156295-afa8-482c-8933-1371f8b3b145
+
+```
+const poolData = {
+    UserPoolId: "us-east-1_aB12cDe34",
+    ClientId: "7ghr5379orhbo88d52vphda6s9"
+}
+```
+
+
+
+### Resources
+
+https://github.com/aws-amplify/amplify-js/tree/main/packages/amazon-cognito-identity-js
